@@ -7,10 +7,11 @@ class RubyGemTest < ActiveSupport::TestCase
     assert_equal "bar", bar.name
   end
 
-  # Issues we ran into:
-  # * bar and baz creation didn't work as expected
-  # * our tests weren't saving before
-  test "create multiple records and sanity check our test env db" do
-    skip "TODO"
+  test "can fetch from rubygems.org" do
+    maid = RubyGem.fetch_from_ruby_gems_dot_org("maid")
+    gems = RubyGem.fetch_from_ruby_gems_dot_org("gems")
+
+    assert_equal "maid", maid.name
+    assert_equal "gems", gems.name
   end
 end

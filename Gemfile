@@ -73,5 +73,3 @@ group :test do
   gem "selenium-webdriver"
   gem "database_cleaner-active_record"
 end
-
-# TODO: add a linter or rubocop or something like that

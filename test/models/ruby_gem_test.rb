@@ -1,12 +1,9 @@
 require "test_helper"
 
 class RubyGemTest < ActiveSupport::TestCase
-  test "the truth" do
-    foo = RubyGem.new
-    foo.name = "bar"
-    foo.save!
+  test "create a RubyGem record" do
+    bar = RubyGem.create!(name: "bar")
 
-    bar = RubyGem.first
     assert_equal "bar", bar.name
   end
 

@@ -73,3 +73,5 @@ group :test do
   gem "database_cleaner-active_record"
   gem "webmock", "~> 3.23"
 end
+
+gem "octokit", "~> 9.1"

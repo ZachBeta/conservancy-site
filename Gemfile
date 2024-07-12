@@ -71,4 +71,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "database_cleaner-active_record"
+  gem "webmock", "~> 3.23"
 end

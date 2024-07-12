@@ -13,14 +13,11 @@ module ActiveSupport
     # Add more helper methods to be used by all tests here...
 
     setup do
-      puts "DatabaseCleaner.start"
       DatabaseCleaner.start
-      puts "DatabaseCleaner.clean"
       DatabaseCleaner.clean
     end
 
     teardown do
-      puts "DatabaseCleaner.clean"
       DatabaseCleaner.clean
     end
   end
